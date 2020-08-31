@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js6</title>
+</head>
+<body>
+	
+		
+		<input type="text" placeholder="enter name" id="text1">
+		<br>
+		<button onclick="fn1()">click me</button>
+	
+
+</body>
+<script type="text/javascript">
+	function fn1()
+	{
+	  var stri = document.getElementById("text1").value;
+	  var patt=/[0-9]/;
+	  if (patt.test(stri)==true)
+	  {
+	    document.write("value inside the text box is not valid");
+     }
+}
+</script>
+
+</html>
