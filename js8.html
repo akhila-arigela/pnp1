@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js7</title>
+</head>
+<body>
+	<form action="https://nptel.ac.in/" method='get'>
+		<label for="phoNo">Phone No: </label>
+	    <input id="phoNo" name="phoNo" type="tel" placeholder="phone no" required minlength="10" maxlength="10" pattern="[0-9]{10}">
+	    <br>
+	    <p id="pa1"></p>
+	    <label>Reason for RDIP:</label>
+	    <input type="radio"  name="HTML" value="HTML" id="HTML">
+            <label for="HTML" >HTML</label>
+
+            <input type="radio"  name="CSS" value="CSS" id="CSS">
+            <label for="CSS" >CSS</label>
+            <input type="radio"  name="JavaScript" value="JavaScript" id="JavaScript">
+
+            <label for="JavaScript">JavaScript</label>
+
+            <br>
+            <p id="pa2"></p>
+            <input type="submit" onclick="fn1()" onclick="fn2()" value="Submit">
+
+	    
+
+
+	</form>
+
+
+</body>
+<script type="text/javascript">
+	function fn1()
+	{
+	  var stri = document.getElementById("phoNo");
+	  var patt=/^\d{10}$/;
+	  if (patt.test(stri.value)!==true)
+	  {  stri.required="cannot start with alpha";
+	    document.getElementById("pa1").innerHTML="valid no.";}
+	}
+
+     function fn2(){
+     var x = document.getElementById("HTML");
+     var y = document.getElementById("CSS");
+     var z = document.getElementById("JavaScript");
+    
+
+	  if( (x.checked || y.checked || z.checked) !==true){
+          document.getElementById("pa2").innerHTML="select atleast one option";   
+
+	  }
+
+	    
+
+     }
+
+
+
+</script>
+
+
+</html>
