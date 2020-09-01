@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fib</title>
+</head>
+<body>
+<input type="text" name="number" id="ipno" oninput="f1()">
+
+</body>
+<script type="text/javascript">
+	function f1(){
+	let num=document.getElementById("ipno").value
+	num=parseInt(num);
+
+
+
+    let a=[0,1];
+    
+     
+    
+    for(let i=2;i<num;i++) {
+    	a[i]=a[i-1]+a[i-2];
+    }
+    console.log(a)}
+
+</script>
+</html>
