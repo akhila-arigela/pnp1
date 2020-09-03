@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").hover(function(){
+    $("#p1").fadeOut();
+  },
+  function(){
+    $("#p1").fadeIn();
+  }); 
+  $("button").dblclick(function(){
+    $("#p2").fadeToggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">This is a paragraph 1.</p><br>
+<p id="p2">This is a paragraph 2.</p>
+<button>click me</button>
+
+</body>
+</html>
